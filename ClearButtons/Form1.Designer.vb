@@ -22,9 +22,31 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.btnOne = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnOne
+        '
+        Me.btnOne.Font = New System.Drawing.Font("Engravers MT", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOne.Location = New System.Drawing.Point(51, 58)
+        Me.btnOne.Name = "btnOne"
+        Me.btnOne.Size = New System.Drawing.Size(112, 70)
+        Me.btnOne.TabIndex = 0
+        Me.btnOne.Text = "1"
+        Me.btnOne.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.ClearButtons.My.Resources.Resources.merry_christmas
+        Me.ClientSize = New System.Drawing.Size(1070, 643)
+        Me.Controls.Add(Me.btnOne)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents btnOne As Button
 End Class
